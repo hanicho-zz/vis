@@ -1,0 +1,5 @@
+Make sure you follow these rules in formatting your class option names, otherwise the SQLite database will reject it during complation!
+
+#1)	names must begin with a letter. Not a symbol. Not a number.
+
+And that's it lol!

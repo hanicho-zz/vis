@@ -1,0 +1,20 @@
+-- This is an interrogation file.
+-- It's like a cross between an OBJ file and  CSV file.
+-- q means the line has a question.
+-- qo means the line has a question option
+-- d means the line has a database to use.
+#d,../vis_0/data/adult_new_workclass_am4/adult.new_workclass_AM4
+#i,../vis0/data/adult.info
+#q,How many hours are there in a day?
+#qo,16
+#qo,24
+#qo,48
+#q,Why are plants green?
+#qo,magic
+#qo,the terrorists
+#qo,photosynthesis
+#q,What is the hottest time of the year?
+#qo,Fall
+#qo,Summer
+#qo,Winter
+#qo,Mega Summer

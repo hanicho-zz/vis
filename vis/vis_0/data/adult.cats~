@@ -1,0 +1,171 @@
+--	This is a comment yo.
+--	Here are the tag values...
+--	#a = attribute name
+--	#t = attribute type	{numeric,category,category_binned}
+--	#v = attribute value
+--
+
+#a Age 
+#t numeric
+
+#a Workclass
+#t category
+#v Private,0
+#v Self_emp_not_inc,1
+#v Self_emp_inc,2
+#v Federal_gov,3
+#v Local_gov,4
+#v State_gov,5
+#v Without_pay,6
+#v Never_worked,7
+
+#a Fnlwgt 
+#t numeric
+
+#a Marital_status
+#t category
+#v Married_civ_spouse,0
+#v Divorced,1
+#v Never_married,2
+#v Separated,3
+#v Widowed,4
+#v Married_spouse_absent,5
+#v Married_AF_spouse,6
+
+#a Occupation 
+#t category
+#v Tech_support,0
+#v Craft_repair,1
+#v Other_service,2
+#v Sales,3
+#v Exec_managerial,4
+#v Prof_specialty,5
+#v Handlers_cleaners,6
+#v Machine_op_inspct,7
+#v Adm_clerical,8
+#v Farming_fishing,9
+#v Transport_moving,10
+#v Priv_house_serv,11
+#v Protective_serv,12
+#v Armed_Forces,13
+
+#a Relationship
+#t category
+#v Wife,0
+#v Own_child,1
+#v Husband,2
+#v Not_in_family,3
+#v Other_relative,4
+#v Unmarried,5
+
+#a Race
+#t category
+#v White,0
+#v Asian_Pac_Islander,1
+#v Amer_Indian_Eskimo,2
+#v Other,3
+#v Black,4
+
+#a Sex
+#t category
+#v Female,0
+#v Male,1
+
+#a Capital_gain 
+#t numeric
+
+#a Capital_loss 
+#t numeric
+
+#a Hours_per_week 
+#t numeric
+
+#a Native_country 
+#t category
+#v United_States,0
+#v Cambodia,1
+#v England,2
+#v Puerto_Rico,3
+#v Canada,4
+#v Germany,5
+#v Outlying_US(Guam_USVI_etc),6
+#v India,7
+#v Japan,8
+#v Greece,9
+#v South,10
+#v China,11
+#v Cuba,12
+#v Iran,13
+#v Honduras,14
+#v Philippines,15
+#v Italy,16
+#v Poland,17
+#v Jamaica,18
+#v Vietnam,19
+#v Mexico,20
+#v Portugal,21
+#v Ireland,22
+#v France,23
+#v Dominican_Republic,24
+#v Laos,25
+#v Ecuador,26
+#v Taiwan,27
+#v Haiti,28
+#v Columbia,29
+#v Hungary,30
+#v Guatemala,31
+#v Nicaragua,32
+#v Scotland,33
+#v Thailand,34
+#v Yugoslavia,35
+#v El_Salvador,36
+#v Trinadad&Tobago,37
+#v Peru,38
+#v Hong,39
+#v Holand_Netherlands,40
+
+#a Income
+#t category
+#v GTE50K,0
+#v LT50K,1
+
+#a Education
+#t category
+#v Preschool,0
+#v 1st_4th,1
+#v 5th_6th,2
+#v 7th_8th,3
+#v 9th,4
+#v 10th,5
+#v 11th,6
+#v 12th,7
+#v HS_grad,8
+#v Some_college,9
+#v Prof_school,10
+#v Assoc_acdm,11
+#v Assoc_voc,12
+#v Bachelors,13
+#v Masters,14
+#v Doctorate,15
+
+#a education
+#t category
+#v UpTo6th,0
+#v NoHS,1
+#v HS,2
+#v PostHS,3
+#v Grad,4
+#v Bach,5
+
+#a age
+#t category_binned
+#v LTE,10,Child
+#v LTE,30,Young_Adult
+#v LTE,60,Adult
+#v GT,60,Senior
+
+#a Hours_worked
+#t category_binned
+#v LT40,Low
+#v LTE55,Average
+#v GT55,High
