@@ -24,18 +24,3 @@
 #qo,50
 #qo,170
 #qo,all of them!
-#d,../vis_0/data/adult_new_race_am4/adult.new_race_AM4.db
-#q,Why is the ocean wet?
-#qo,water
-#qo,the sky is melting
-#qo,it's not wet
-#d,../vis_0/data/adult_new_income_am4/adult.new_income_AM4.db
-#q,How do birds walk?
-#qo,they hop
-#qo,they skip
-#qo,they jump
-#d,../vis_0/data/adult_new_education_am4/adult.new_education_AM4.db
-#q,How smart is the smartest rock on the mountain?
-#qo,pretty dumb
-#qo,average iq
-#qo,rocket brains

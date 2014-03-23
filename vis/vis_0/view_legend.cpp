@@ -5,7 +5,7 @@ view_legend::view_legend(QWidget *parent) :
 {
 
     //
-    resize(1000, 500);
+    resize(750, 250);
 
     //
     setWindowTitle("Legend");
@@ -24,11 +24,11 @@ view_legend::view_legend(QWidget *parent) :
     _vbox_maj->addWidget( _container );
 
     //
-    push_element( "yabba", Qt::red );
+    //push_element( "yabba", Qt::red );
     //
-    push_element( "dabba", Qt::green );
+    //push_element( "dabba", Qt::green );
     //
-    push_element( "doo", Qt::blue );
+    //push_element( "doo", Qt::blue );
 }
 
 

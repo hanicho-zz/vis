@@ -3,7 +3,7 @@
 -- q means the line has a question.
 -- qo means the line has a question option
 -- d means the line has a database to use.
-#d,../vis_0/data/adult_new_workclass_am4/adult.new_workclass_AM4
+#d,../vis_0/data/adult_new_workclass_am4/adult.new_workclass_AM4.db
 #i,../vis_0/data/adult.info
 #q,How many hours are there in a day?
 #qo,16
@@ -18,23 +18,23 @@
 #qo,Summer
 #qo,Winter
 #qo,Mega Summer
-#d,../vis_0/data/adult_new_sex_am4/adult.new_sex_AM4
+#d,../vis_0/data/adult_new_sex_am4/adult.new_sex_AM4.db
 #q,How many doughnuts are there in Homer Simpson?
 #qo,25
 #qo,50
 #qo,170
 #qo,all of them!
-#d,../vis_0/data/adult_new_race_am4/adult.new_race_AM4
+#d,../vis_0/data/adult_new_race_am4/adult.new_race_AM4.db
 #q,Why is the ocean wet?
 #qo,water
 #qo,the sky is melting
 #qo,it's not wet
-#d,../vis_0/data/adult_new_income_am4/adult.new_income_AM4
+#d,../vis_0/data/adult_new_income_am4/adult.new_income_AM4.db
 #q,How do birds walk?
 #qo,they hop
 #qo,they skip
 #qo,they jump
-#d,../vis_0/data/adult_new_education_am4/adult.new_education_AM4
+#d,../vis_0/data/adult_new_education_am4/adult.new_education_AM4.db
 #q,How smart is the smartest rock on the mountain?
 #qo,pretty dumb
 #qo,average iq
