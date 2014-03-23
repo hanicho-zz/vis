@@ -5,7 +5,8 @@ view_legend::view_legend(QWidget *parent) :
 {
 
     //
-    setFixedSize( 300, 800 );
+    resize( 800, 300 );
+    showMaximized();
 
     //
     setWindowTitle("Legend");

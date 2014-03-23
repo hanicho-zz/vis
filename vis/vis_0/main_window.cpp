@@ -108,21 +108,32 @@ void main_window::init_menu_file(){
     //  file >> quit.
     //
     menu_file->addSeparator();
+    QAction *inte = new QAction("&Load Interrogation", this);
+    menu_file->addAction(inte);
+    connect(inte, SIGNAL(triggered()), this, SLOT(func_interrogation()));
+
+    QAction *comp = new QAction("&Compile Dataset", this);
+    menu_file->addAction(comp);
+    connect(comp, SIGNAL(triggered()), this, SLOT(func_compile()));
+
+    // graph currently doesn't return to the normal slot when closed
+    QAction *popo = new QAction("&Popout", this);
+    menu_file->addAction(popo);
+    connect(popo, SIGNAL(triggered()), this, SLOT(func_popout()));
+
     QAction *quit = new QAction("&Quit", this);
     menu_file->addAction(quit);
     connect(quit, SIGNAL(triggered()), this, SLOT(close()));
-
-    //
-    QMenu *menu_about = menuBar()->addMenu("&About");
-    QAction *about = new QAction("&About", this);
-    menu_about->addAction(about);
-    connect(about, SIGNAL(triggered()), this, SLOT(close()));
 
     //
     QMenu *menu_help = menuBar()->addMenu("&Help");
     QAction *help = new QAction("&Help", this);
     menu_help->addAction(help);
     connect(help, SIGNAL(triggered()), this, SLOT(close()));
+
+    QAction *abou = new QAction("&About", this);
+    menu_help->addAction(abou);
+    connect(abou, SIGNAL(triggered()), this, SLOT(close()));
 }
 //+++++++++++++++++++++++++++++++++++++++++
 
@@ -135,53 +146,46 @@ void main_window::init_toolbar(){
     QToolBar *toolbar = addToolBar("main toolbar");
     toolbar->setMovable(false);
 
-    //
-    act_popout = new QAction("Popout",0);
-    act_lasso = new QAction("Lasso",0);
-    act_table = new QAction("Table",0);
-    act_zoom = new QAction("Zoom",0);
-    act_peel = new QAction("Peel",0);
+    // drawing a new graph in search does not allow to reload the
+    // old graph
     act_legend = new QAction("Legend",0);
-    act_compile = new QAction("Compile",0);
-    act_tour = new QAction("Tour",0);
-    act_interrogation = new QAction("Interrogation",0);
+    act_table = new QAction("Table",0);
     act_search = new QAction("Search", 0);
+    //act_compile = new QAction("Compile",0);
+    //act_lasso = new QAction("Lasso",0);
+    //act_zoom = new QAction("Zoom",0);
+    //act_peel = new QAction("Peel",0);
+    //act_tour = new QAction("Tour",0);
 
     //
-    act_popout->setCheckable(false);
-    act_lasso->setCheckable(true);
-    act_table->setCheckable(false);
-    act_zoom->setCheckable(true);
-    act_peel->setCheckable(true);
     act_legend->setCheckable(false);
-    act_compile->setCheckable(false);
-    act_tour->setCheckable(false);
-    act_interrogation->setCheckable(false);
+    act_table->setCheckable(false);
     act_search->setCheckable(false);
+    //act_compile->setCheckable(false);
+    //act_lasso->setCheckable(true);
+    //act_zoom->setCheckable(true);
+    //act_peel->setCheckable(true);
+    //act_tour->setCheckable(false);
 
     //
-    toolbar->addAction( act_popout );
-    toolbar->addAction( act_lasso );
-    toolbar->addAction( act_table );
-    toolbar->addAction( act_zoom );
-    toolbar->addAction( act_peel );
     toolbar->addAction( act_legend );
-    toolbar->addAction( act_compile );
-    toolbar->addAction( act_tour );
-    toolbar->addAction( act_interrogation );
+    toolbar->addAction( act_table );
     toolbar->addAction( act_search );
+    //toolbar->addAction( act_compile );
+    //toolbar->addAction( act_zoom );
+    //toolbar->addAction( act_lasso );
+    //toolbar->addAction( act_peel );
+    //toolbar->addAction( act_tour );
 
     //
-    connect(act_popout, SIGNAL(triggered()), this, SLOT(func_popout()));
-    connect(act_lasso, SIGNAL(triggered()), this, SLOT(func_lasso()));
-    connect(act_table, SIGNAL(triggered()), this, SLOT(func_table()));
-    connect(act_zoom, SIGNAL(triggered()), this, SLOT(func_zoom()));
-    connect(act_peel, SIGNAL(triggered()), this, SLOT(func_peel()));
     connect(act_legend, SIGNAL(triggered()), this, SLOT(func_legend()) );
-    connect(act_compile, SIGNAL(triggered()), this, SLOT(func_compile()));
-    connect(act_tour, SIGNAL(triggered()), this, SLOT(func_tour()));
-    connect(act_interrogation, SIGNAL(triggered()), this, SLOT(func_interrogation()));
+    connect(act_table, SIGNAL(triggered()), this, SLOT(func_table()));
     connect(act_search, SIGNAL(triggered()), this, SLOT(func_search()) );
+    //connect(act_compile, SIGNAL(triggered()), this, SLOT(func_compile()));
+    //connect(act_lasso, SIGNAL(triggered()), this, SLOT(func_lasso()));
+    //connect(act_zoom, SIGNAL(triggered()), this, SLOT(func_zoom()));
+    //connect(act_peel, SIGNAL(triggered()), this, SLOT(func_peel()));
+    //connect(act_tour, SIGNAL(triggered()), this, SLOT(func_tour()));
 }
 void main_window::uncheck_toolbar(){
 
