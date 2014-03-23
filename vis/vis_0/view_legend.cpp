@@ -5,11 +5,11 @@ view_legend::view_legend(QWidget *parent) :
 {
 
     //
-    resize( 800, 300 );
-    showMaximized();
+    resize(1000, 500);
 
     //
     setWindowTitle("Legend");
+    setWindowIcon(QIcon(QDir::currentPath() + "/../vis_0/data/MAPLE_logo_transparent.gif"));
 
     //
     _vbox_maj = new QVBoxLayout;

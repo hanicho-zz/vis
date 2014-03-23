@@ -7,7 +7,9 @@ view_compile::view_compile( library* lib, QWidget *parent)
 {
 
     //
-    setFixedSize( 500, 300 );
+    setWindowTitle("Compile Dataset");
+    setWindowIcon(QIcon(QDir::currentPath() + "/../vis_0/data/MAPLE_logo_transparent.gif"));
+    setFixedSize( 250, 100 );
 
     //
     init_view();

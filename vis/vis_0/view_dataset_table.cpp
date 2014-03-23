@@ -16,6 +16,7 @@ view_dataset_table::view_dataset_table(QWidget *parent) :
 
     //
     setWindowTitle( "Individual Instance Table" );
+    setWindowIcon(QIcon(QDir::currentPath() + "/../vis_0/data/MAPLE_logo_transparent.gif"));
 }
 
 

@@ -18,6 +18,7 @@ view_edit_search::view_edit_search(library *lib, QWidget *parent )
 
     //
     setWindowTitle("Edit Existing Search");
+    setWindowIcon(QIcon(QDir::currentPath() + "/../vis_0/data/MAPLE_logo_transparent.gif"));
 }
 //++++++++++++++++++++++++++++++++++
 

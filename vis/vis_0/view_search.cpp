@@ -15,6 +15,7 @@ view_search::view_search( library* lib, QWidget *parent) :
 
     //
     setWindowTitle("Dataset Search");
+    setWindowIcon(QIcon(QDir::currentPath() + "/../vis_0/data/MAPLE_logo_transparent.gif"));
 
     //
     _main_layout = new QVBoxLayout();

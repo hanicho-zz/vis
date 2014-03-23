@@ -27,11 +27,12 @@ main_window::main_window(QWidget *parent)
 {
 
     //
-    resize(1000, 800);
+    resize(1000, 500);
     showMaximized();
 
     //
     setWindowTitle("Model Investigator");
+    setWindowIcon(QIcon(QDir::currentPath() + "/../vis_0/data/MAPLE_logo_transparent.gif"));
 
     //
     init_menu_file();
@@ -108,7 +109,7 @@ void main_window::init_menu_file(){
     //  file >> quit.
     //
     menu_file->addSeparator();
-    QAction *inte = new QAction("&Load Interrogation", this);
+    QAction *inte = new QAction("&Load Interrogation File", this);
     menu_file->addAction(inte);
     connect(inte, SIGNAL(triggered()), this, SLOT(func_interrogation()));
 

@@ -98,7 +98,7 @@ void view_player::init_view(){
         //
         _grid->addLayout( box, (text_height*_list_hbox.size()),0, button_height,total_width );
     }
-
+    hide_all_options();
     //
     _text_browser->setText("This is the player. Questions durring the interrogation will go right here. ");
 }

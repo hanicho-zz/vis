@@ -18,6 +18,7 @@ view_new_search::view_new_search(library *lib, QWidget *parent )
 
     //
     setWindowTitle("Create New Search");
+    setWindowIcon(QIcon(QDir::currentPath() + "/../vis_0/data/MAPLE_logo_transparent.gif"));
 }
 //++++++++++++++++++++++++++++++++++
 
